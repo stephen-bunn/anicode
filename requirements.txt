@@ -1,7 +1,7 @@
-click
-requests
-lxml
-beautifulsoup4
-halo
-spinners
-pyperclip
+click==6.7
+requests==2.18.4
+lxml==4.1.1
+beautifulsoup4==4.6.0
+halo==0.0.10
+spinners==0.0.20
+pyperclip==1.6.0
