@@ -1,0 +1,13 @@
+[run]
+branch=True
+include=
+    anicode/*
+
+[report]
+show_missing=True
+omit=
+    anicode/__init__.py
+    anicode/__version__.py
+    anicode/const.py
+    anicode/meta/*
+    */_common.py

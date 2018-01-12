@@ -1,0 +1,10 @@
+sphinx
+sphinx-click
+
+flake8
+coverage
+pytest
+pytest-cov
+pytest-flake8
+ptpython
+cprofilev

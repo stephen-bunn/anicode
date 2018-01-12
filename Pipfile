@@ -1,0 +1,26 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+click = "*"
+
+
+[dev-packages]
+
+sphinx = "*"
+sphinx-click = "*"
+
+"flake8" = "*"
+pytest = "*"
+coverage = "*"
+pytest-cov = "*"
+"pytest-flake8" = "*"
+ptpython = "*"
+cprofilev = "*"
+
+
+[requires]
