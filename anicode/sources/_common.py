@@ -3,8 +3,6 @@
 
 import abc
 
-import furl
-
 
 class BaseSource(abc.ABC):
 
