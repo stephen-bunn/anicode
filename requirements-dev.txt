@@ -5,6 +5,6 @@ flake8==3.5.0
 coverage==4.4.2
 pytest==3.3.2
 pytest-cov==2.5.1
-pytest-flake8
+pytest-flake8==0.9.1
 ptpython
 cprofilev
