@@ -4,7 +4,7 @@ sphinx-click==1.0.4
 flake8==3.5.0
 coverage==4.4.2
 pytest==3.3.2
-pytest-cov
+pytest-cov==2.5.1
 pytest-flake8
 ptpython
 cprofilev
