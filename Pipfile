@@ -6,14 +6,21 @@ name = "pypi"
 
 
 [packages]
+
 click = "*"
+requests = "*"
+halo = "*"
+colorama = "*"
+pyperclip = "*"
+"beautifulsoup4" = "*"
+lxml = "*"
+spinners = "*"
 
 
 [dev-packages]
 
 sphinx = "*"
 sphinx-click = "*"
-
 "flake8" = "*"
 pytest = "*"
 coverage = "*"
@@ -24,3 +31,4 @@ cprofilev = "*"
 
 
 [requires]
+

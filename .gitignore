@@ -110,3 +110,4 @@ venv.bak/
 .vscode/
 logs/
 main.py
+Pipfile.lock

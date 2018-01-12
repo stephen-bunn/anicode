@@ -1,2 +1,7 @@
-
 click
+requests
+lxml
+beautifulsoup4
+halo
+spinners
+pyperclip

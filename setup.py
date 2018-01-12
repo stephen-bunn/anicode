@@ -10,6 +10,13 @@ import setuptools
 CURDIR = os.path.abspath(os.path.dirname(__file__))
 REQUIRES = [
     'click',
+    'beautifulsoup4',
+    'colorama',
+    'requests',
+    'spinners',
+    'halo',
+    'pyperclip',
+
 ]
 TEST_REQUIRES = [
     'pytest',
