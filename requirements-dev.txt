@@ -1,7 +1,7 @@
 sphinx==1.6.6
 sphinx-click==1.0.4
 
-flake8
+flake8==3.5.0
 coverage
 pytest
 pytest-cov
