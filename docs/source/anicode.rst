@@ -20,9 +20,18 @@ anicode
     :show-inheritance:
 
 
+anicode\.result
+---------------
+The default anicode result object.
+
+.. automodule:: anicode.result
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
 anicode\.sources
 ----------------
-
 Below are a list of currently included unicode sources utilized by :class:`~anicode.anicode.Anicode`.
 
 

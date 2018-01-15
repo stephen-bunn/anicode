@@ -47,10 +47,13 @@ A quick unicode search tool
 * Documentation: https://anicode.readthedocs.io
 
 
-Features
---------
+Usage
+-----
 
-.. TODO: Outline project features
+.. image:: https://github.com/stephen-bunn/anicode/raw/docs/source/_static/usage.gif
+    :alt: Anicode Usage
+    :width: 800
+    :align: center
 
 
 Credits
