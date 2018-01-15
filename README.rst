@@ -50,7 +50,7 @@ A quick unicode search tool
 Usage
 -----
 
-.. image:: https://github.com/stephen-bunn/anicode/raw/docs/source/_static/usage.gif
+.. image:: https://github.com/stephen-bunn/anicode/raw/master/docs/source/_static/usage.gif
     :alt: Anicode Usage
     :width: 800
     :align: center
