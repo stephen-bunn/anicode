@@ -1,5 +1,5 @@
 =======
-anicode
+Anicode
 =======
 A quick unicode search tool
 
@@ -56,6 +56,7 @@ Reference
     :maxdepth: 2
 
     contributing
+    command-line
     anicode
 
 

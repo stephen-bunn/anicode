@@ -77,6 +77,9 @@ setuptools.setup(
     include_package_data=True,
     install_requires=REQUIRES,
     packages=setuptools.find_packages(),
+    entry_points={
+        'console_scripts': ['anicode=anicode:cli']
+    },
     keywords=['anicode'],
     python_requires='>=3.5',
     classifiers=[

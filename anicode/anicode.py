@@ -9,12 +9,18 @@ from . import (const, sources,)
 
 
 class Anicode(object):
-
-    def __init__(self):
-        self.results = collections.OrderedDict()
+    """ The base Anicode client.
+    """
 
     @property
     def sources(self):
+        """ The dictionary of enabled sources.
+
+        :getter: Returns the dictionary of enabled sources
+        :setter: Does not allow setting
+        :rtype: dict[str, BaseSource]
+        """
+
         if not hasattr(self, '_sources'):
             self._sources = {}
             for (source_name, source_class,) in inspect.getmembers(
@@ -25,10 +31,23 @@ class Anicode(object):
         return self._sources
 
     def _callback(self, source, result):
+        """ The default client result callback.
+
+        :param BaseSource source: The yeilding source object
+        :param AnicodeResult result: The anicode result
+        :returns: Does not return
+        """
+
         if result.code not in self.results:
             self.results[result.code] = result
 
     def search(self, query, count=10):
+        """ The default client search method.
+
+        :param str query: The query string to search for
+        :param int count: The number of results to yeild for each source
+        """
+
         (self.results, futures,) = (collections.OrderedDict(), [],)
         with concurrent.futures.ThreadPoolExecutor() as executor:
             for (_, source,) in self.sources.items():

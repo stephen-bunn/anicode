@@ -19,7 +19,7 @@ spinners = "*"
 
 [dev-packages]
 
-sphinx = "*"
+Sphinx = "*"
 sphinx-click = "*"
 "flake8" = "*"
 pytest = "*"
@@ -27,7 +27,7 @@ coverage = "*"
 pytest-cov = "*"
 "pytest-flake8" = "*"
 ptpython = "*"
-cprofilev = "*"
+CProfileV = "*"
 
 
 [requires]

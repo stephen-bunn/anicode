@@ -25,6 +25,17 @@ CONTEXT_SETTINGS = dict(
 
 
 def _validate_spinner(ctx, param, value):
+    """ Validates if a spinner string binds to a spinner.
+
+    :param click.Context ctx: The calling clicks current context
+    :param str param: The parameter name
+    :param str value: The given value of the parameter
+    :raises click.BadParameter:
+        - when the spinner value is not a valid spinner
+    :returns: The spinner value
+    :rtype: str
+    """
+
     spinner_names = [_.name for _ in spinners.spinners.Spinners]
     if value not in spinner_names:
         raise click.BadParameter((
@@ -34,7 +45,13 @@ def _validate_spinner(ctx, param, value):
 
 
 def _render_results(results):
-    result_padding = ' ' * len(results)
+    """ Renders a list of results to stdout.
+
+    :param results: The list of results to write to stdout
+    :type results: list[AnicodeResult]
+    :returns: Does not return
+    """
+
     for (result_idx, result,) in enumerate(results.values()):
         sys.stdout.write((
             '{style.BRIGHT}{fore.CYAN}{result_idx:>3}{style.RESET_ALL} ➜  '
@@ -43,6 +60,14 @@ def _render_results(results):
 
 
 def _select_result(results):
+    """ Prompts the user to choose a result from the rendered results.
+
+    :param results: The list of results to choose from
+    :type results: list[AnicodeResult]
+    :returns: The chosen result
+    :rtype: AnicodeResult
+    """
+
     choice = input((
         '{style.BRIGHT}[ {fore.CYAN}select character{fore.RESET} ]: '
         '{style.RESET_ALL}'
@@ -62,6 +87,13 @@ def _select_result(results):
 
 
 def _copy_result(result, html=False):
+    """ Copies a given result to the clipboard.
+
+    :param AnicodeResult result: The result to copy
+    :param bool html: True if should copy html code instead of unicode
+    :returns: Does not return
+    """
+
     (copy_from, extra_spacing,) = (result.char, ' ',)
     if html:
         copy_from = cgi.escape(copy_from).encode(
@@ -79,7 +111,6 @@ def _copy_result(result, html=False):
     ).format(**COLOR))
 
 
-
 @click.group(invoke_without_command=True, context_settings=CONTEXT_SETTINGS)
 @click.version_option(
     prog_name=__version__.__name__,
@@ -92,11 +123,11 @@ def cli(ctx):
     \b
     Usage:
     \b
-
         anicode search "query" - (searches for a unicode character)
     """
 
     if ctx.invoked_subcommand is None:
+        click.echo(__version__.__fancy__)
         click.echo(ctx.get_usage())
     ctx.obj = ctx.params
 
