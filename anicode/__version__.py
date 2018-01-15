@@ -11,7 +11,7 @@ __fancy__ = '''
   ┗┛   \__,_|_| |_|_|\___\___/ \__,_|\___|
 '''
 __description__ = 'A quick unicode search tool'
-__version__ = '0.0.0'
+__version__ = '0.0.1'
 __author__ = """Stephen Bunn"""
 __contact__ = 'stephen@bunn.io'
 __license__ = 'MIT License'

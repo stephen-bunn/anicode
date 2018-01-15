@@ -9,6 +9,11 @@ Changelog
 *unreleased*
 ------------
 
+`0.0.1`_ (*2018-01-15*)
+-----------------------
+* fixed usage documentation
+
+
 `0.0.0`_ (*2018-01-15*)
 -----------------------
 *this is the first pre-alpha release, so the only other prior change history is the git commit log*
@@ -20,3 +25,4 @@ Changelog
 
 
 .. _0.0.0: https://github.com/stephen-bunn/anicode/releases/tag/v0.0.0
+.. _0.0.1: https://github.com/stephen-bunn/anicode/releases/tag/v0.0.1
