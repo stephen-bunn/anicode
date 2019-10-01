@@ -11,6 +11,7 @@ CURDIR = os.path.abspath(os.path.dirname(__file__))
 REQUIRES = [
     'click',
     'beautifulsoup4',
+    'lxml',
     'colorama',
     'requests',
     'spinners',
