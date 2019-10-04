@@ -9,6 +9,10 @@ Changelog
 *unreleased*
 ------------
 
+`0.0.2`_ (*2019-10-04*)
+-----------------------
+* fixed lxml import for setup.py
+
 `0.0.1`_ (*2018-01-15*)
 -----------------------
 * fixed usage documentation
@@ -26,3 +30,4 @@ Changelog
 
 .. _0.0.0: https://github.com/stephen-bunn/anicode/releases/tag/v0.0.0
 .. _0.0.1: https://github.com/stephen-bunn/anicode/releases/tag/v0.0.1
+.. _0.0.2: https://github.com/stephen-bunn/anicode/releases/tag/v0.0.2
